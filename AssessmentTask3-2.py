@@ -21,7 +21,6 @@ while guess != answer:
     if guess == answer:
         print("CONGRATULATIONS YOU WON! THE CORRECT ANSWER IS: ", answer)
         print("IT TOOK YOU", len(guesses) - 2, "GUESSES TO GET THE CORRECT ANSWER")
-        break
     if guess < 1 or guess > 100:
         print("OUT OF BOUNDS")
         print("PLEASE TRY AGAIN!")
