@@ -1,4 +1,4 @@
-print("Nathaniel Villa Faa")
+print("Name: ")
 print("Pamantasan ng Lungsod ng Maynila")
 print("General Luna, Corner, Muralla St. Intramuros, Manila \n")
 
