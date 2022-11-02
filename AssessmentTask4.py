@@ -67,3 +67,38 @@ def multiply(numbers):
     pass
 multiply([1,2,3,-4])
 
+print("Number 6: Write a Python function that checks whether a word or phrase is palindrome")
+
+
+def palindrome(s):
+    if s == s[::-1]:
+        print(f"{s} is a palindrome \n")
+    else:
+        print(f"{s} is not a palindrome \n")
+    pass
+
+
+palindrome("natan")
+
+print("Number 7: Pangram")
+
+
+def pangram(sentence, alphabet=string.ascii_lowercase):
+    without_space = sentence.replace(" ", "")
+    first_list = []
+
+    for letters in without_space:
+        first_list.append(letters)
+
+    final_set = set(first_list)
+    alphabet_set = set(alphabet)
+
+    if final_set == alphabet_set:
+        print("This is a pangram")
+    else:
+        print("This is not a pangram")
+    pass
+
+
+pangram("the quick brown fox jumps over the lazy dog")
+
