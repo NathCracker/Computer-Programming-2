@@ -70,7 +70,7 @@ print("Number 13: Can you sort a dictionary?")
 print("No, because dictionaries are orderless and they are not sequences unlike tuples and lists", "\n")
 
 print("Number 14: What is the difference between tuples and lists?")
-print("Tuples are immutable which means that tuples values cannot be changed while lists are immutable", "\n")
+print("Tuples are immutable which means that tuples values cannot be changed while lists are mutable", "\n")
 
 print("Number 15: How do you create a tuple?")
 print("Tuples can be created using parenthesis", "\n")
@@ -114,8 +114,3 @@ l_two = [1, 2, {'k1': 4}]
 # false 3 >= 4
 l_one[2][0] >= l_two[2]['k1']
 print("l_one[2][0] >= l_two[2]['k1'] or 3 >= 4", l_one[2][0] >= l_two[2]['k1'])
-
-
-
-
-
