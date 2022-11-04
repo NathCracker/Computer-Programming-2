@@ -50,6 +50,10 @@ up_low("Panget Ka Bobo ka tang ina mo")
 print("Number 4: Write a python function that takes a list and returns a new list with unique elements of the first "
       "list")
 
+
+#Here is the shortcut method
+
+
 def unique_List(yourList):
     setFirst = set(yourList)
     listAgain = list(setFirst)
@@ -57,6 +61,20 @@ def unique_List(yourList):
     print(listAgain, "\n")
     pass
 unique_List([1,1,1,1,2,2,2,2,3,3,3,4,4,4,5,5,5])
+
+#Here is the manual method
+
+def unique_manual(your_list):
+    final_list = []
+    for items in your_list:
+        if items not in final_list:
+           final_list.append(items)
+    final_list.sort()
+    print(final_list)
+    pass
+
+unique_manual([1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7,8,8,8,9,9,9,10,10,10])
+
 
 print("Number 5: Write a python function to multiply all the numbers in a list")
 def multiply(numbers):
