@@ -35,3 +35,50 @@ dt1 = datetime.timedelta(hours=t1.hour, minutes=t1.minute, seconds=t1.second, mi
 dt2 = datetime.timedelta(hours=t2.hour, minutes=t2.minute, seconds=t2.second, microseconds=t2.microsecond)
 
 print('Time Difference... ', dt2-dt1)
+
+#Voting Shit
+from collections import Counter
+
+class Candidate(object):
+    # class attribute
+    votes = []
+    def __init__(self, name, position):
+        # constructor/initialization of class Candidate
+        self.name = name
+        self.position = position
+
+    def setVotes(self, vote):
+        # method to set votes data
+        self.votes.append(vote)
+
+    def getVotes(self):
+        # method to get votes data
+        return self.votes
+
+    def dispCandid(self):
+        # method for interface
+        print(f"Name: {self.name}\nPosition: {self.position}")
+
+# instantiate objects of Candidates
+candi1 = Candidate("John Doe", "President")
+candi2 = Candidate("Jane Smith", "Vice President")
+candi3 = Candidate("Bob Johnson", "Secretary")
+
+# display candidate information
+candi1.dispCandid()
+candi2.dispCandid()
+candi3.dispCandid()
+
+for x in range(10):
+    voteCast = int(input('Enter code to cast your vote: '))
+    # set vote
+    candi1.setVotes(voteCast)
+    # get vote
+print(candi1.getVotes())
+
+# create a dictionary of votes
+d = dict(Counter(Candidate.votes))
+
+# display the results
+for key, value in d.items():
+    print(f"Candidate {key} received {value} votes.")
