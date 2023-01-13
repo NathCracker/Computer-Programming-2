@@ -25,4 +25,13 @@ print("second :", t1.second)
 print("microsecond :", t1.microsecond)
 print("tzinfo :", t1.tzinfo)
 
+#timedelta
+import datetime
+t1 = datetime.time(8,0,0) 
+print('Start time.... ', t1)
+t2 = datetime.time(12,0,0) 
+print('End time.... ', t2)
+dt1 = datetime.timedelta(hours=t1.hour, minutes=t1.minute, seconds=t1.second, microseconds=t1.microsecond)
+dt2 = datetime.timedelta(hours=t2.hour, minutes=t2.minute, seconds=t2.second, microseconds=t2.microsecond)
 
+print('Time Difference... ', dt2-dt1)
